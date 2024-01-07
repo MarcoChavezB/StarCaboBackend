@@ -23,6 +23,7 @@ Route::get('/', function () {
     return 'backend working';
 });
 
+
 Route::get('/hotels', [hotelsController::class, 'index']);
 Route::get('info/hotel/{placeID}', [hotelsController::class, 'infoHotel']);
 Route::get('/hotels/zone/{zone}', [hotelsController::class, 'showHotelsZone']);

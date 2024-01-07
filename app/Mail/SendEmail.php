@@ -33,7 +33,7 @@ class SendEmail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: '(--PRUEBA--)Nueva reservación',
+            subject: 'Nueva reservación',
         );
     }
 
