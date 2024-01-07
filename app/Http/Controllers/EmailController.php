@@ -10,7 +10,7 @@ class EmailController extends Controller
 {
     function sendEmail (Request $request){
         $tiketData = $request->all();
-        Mail::to('marco1102004@gmail.com')->send(new SendEmail($tiketData));
+        Mail::to('starcabo21@gmail.com')->send(new SendEmail($tiketData));
         return response()->json(['message' => 'Correo enviado con éxito']);
     }
 }
