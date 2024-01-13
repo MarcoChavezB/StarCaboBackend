@@ -101,13 +101,13 @@
         </tr>
     </table>
     <div class="buttons">
-    <form action="http://127.0.0.1:8000/send-email-rechazo" method="post">
+    <form action="https://back-end.studio/send-email-rechazo" method="post">
         @csrf
         <input type="hidden" name="email" value="{{$tiketData['personal_information']['email']}}">
         <button type="submit" class="btn-rechazar">Rechazar</button>
     </form>
 
-    <form action="http://127.0.0.1:8000/send-email-aceptar" method="post">
+    <form action="https://back-end.studio/send-email-aceptar" method="post">
         @csrf
         <input type="hidden" name="email" value="{{$tiketData['personal_information']['email']}}">
         <button type="submit" class="btn-aceptar">Aceptar</button>
