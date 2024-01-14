@@ -21,7 +21,7 @@ class EmailController extends Controller
     function sendEmailRechazo (Request $request){
         $email = $request->input('email');
         Mail::to($email)->send(new SendEmailRechazo());
-        return response()->json(['message' => 'Correo enviado con éxito']);
+        return View('RedirectViews.email-enviado');
     }
 
     function sendEmailAceptar (Request $request){
