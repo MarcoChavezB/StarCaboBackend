@@ -16,7 +16,7 @@
                 <h2 style="color: #e74c3c; margin-bottom: 20px;">We're Sorry</h2>
                 <p style="font-size: 16px; color: #333; line-height: 1.6;">We regret to inform you that your request has been rejected for various reasons.</p>
                 <p style="font-size: 16px; color: #333; line-height: 1.6;">If you have any questions or need more information, please don't hesitate to contact us.</p>
-                <p style="font-size: 16px; color: #333; line-height: 1.6;">StarCabo <br> 624 122 6386</p>
+                <p style="font-size: 16px; color: #333; line-height: 1.6;">StarCabo <br> Tel: 624 122 6386</p>
             </td>
         </tr> 
     </table>

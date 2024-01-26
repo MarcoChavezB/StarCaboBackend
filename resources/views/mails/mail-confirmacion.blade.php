@@ -17,8 +17,8 @@
                 <p style="font-size: 16px; color: #333; line-height: 1.6;">We are pleased to inform you that your request has been successfully confirmed.</p>
                 <p style="font-size: 16px; color: #333; line-height: 1.6;">We appreciate your interest and look forward to having you as part of our community.</p>
                 <p style="font-size: 16px; color: #333; line-height: 1.6;">For any questions or clarifications, feel free to contact us.</p>
-                <p style="font-size: 16px; color: #27ae60; line-height: 1.6;">We'll be waiting for you at umbrella #4</p>
-                <p style="font-size: 16px; color: #333; line-height: 1.6;">StarCabo <br> Phone: 624 122 6386</p>
+                <p style="font-size: 16px; color: #27ae60; line-height: 1.6;">We'll be waiting for you at umbrella #4 in terminal 2</p>
+                <p style="font-size: 16px; color: #333; line-height: 1.6;">StarCabo <br> Tel: 624 122 6386</p>
             </td>
         </tr>
     </table>

@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmación de Reserva</title>
     <style>
@@ -87,7 +86,7 @@
                 <p style="color: #666; margin-bottom: 10px;">Numero de pasajeros: {{$tiketData['arrive_information']['number_passengers']}}</p>
 
                 @if($tiketData['second_arrive_information']['star_location'])
-                <h2 style="color: #333; margin-bottom: 20px;">Informacion de llegada 2:</h2>
+                <h2 style="color: #333; margin-bottom: 20px;">información de salida:</h2>
                 <p style="color: #666; margin-bottom: 10px;">Lugar de llegada: {{$tiketData['second_arrive_information']['star_location']}}</p>
                 <p style="color: #666; margin-bottom: 10px;">Lugar de destino: {{$tiketData['second_arrive_information']['end_location']}}</p>
                 <p style="color: #666; margin-bottom: 10px;">Dia: {{$tiketData['second_arrive_information']['second_date']}}</p>
@@ -101,19 +100,8 @@
         </tr>
     </table>
     <div class="buttons">
-    <form action="https://back-end.studio/send-email-rechazo" method="post">
-        @csrf
-        <input type="hidden" name="email" value="{{$tiketData['personal_information']['email']}}">
-        <button type="submit" class="btn-rechazar">Rechazar</button>
-    </form>
-
-    <form action="https://back-end.studio/send-email-aceptar" method="post">
-        @csrf
-        <input type="hidden" name="email" value="{{$tiketData['personal_information']['email']}}">
-        <button type="submit" class="btn-aceptar">Aceptar</button>
-    </form>        
+        <a href="https://back-end.studio/send-email-rechazo/{{$tiketData['personal_information']['email']}}" class="btn-rechazar">Rechazar</a>
+        <a href="https://back-end.studio/send-email-aceptar/{{$tiketData['personal_information']['email']}}" class="btn-aceptar">Aceptar</a>
     </div>
-    </script>
 </body>
-
 </html>

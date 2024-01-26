@@ -32,5 +32,5 @@ Route::get('hotels/id/{id}', [hotelsController::class, 'hotel_id']);
 
 // ! Routes EMail
 Route::post('/send-email', [EmailController::class, 'sendEmail']);
-Route::post('/send-email-rechazo', [EmailController::class, 'sendEmailRechazo']);
-Route::post('/send-email-aceptar', [EmailController::class, 'sendEmailAceptar']);
+Route::post('/send-email-rechazo/{email}', [EmailController::class, 'sendEmailRechazo']);
+Route::post('/send-email-aceptar/{email}', [EmailController::class, 'sendEmailAceptar']);

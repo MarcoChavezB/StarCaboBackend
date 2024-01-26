@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\SendEmail;
 use App\Mail\SendEmailConfirmacion;
 use App\Mail\SendEmailRechazo;
-use Illuminate\Contracts\View\View;
 
 class EmailController extends Controller
 {
@@ -18,19 +17,13 @@ class EmailController extends Controller
     }
 
 
-    function sendEmailRechazo (Request $request){
-        $email = $request->input('email');
+    function sendEmailRechazo ($email){
         Mail::to($email)->send(new SendEmailRechazo());
         return View('RedirectViews.email-enviado');
     }
 
-    function sendEmailAceptar (Request $request){
-        $email = $request->input('email');
+    function sendEmailAceptar ($email){
         Mail::to($email)->send(new SendEmailConfirmacion());
         return View('RedirectViews.email-enviado');
     }
-
-    
-
-
 }

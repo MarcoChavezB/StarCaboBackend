@@ -154,9 +154,9 @@
                     </svg>
                 </div>
                 <div class="content">
-                    <span class="title">Recervacion actualizada</span>
-                    <p class="message">Sea ha mandado el status de recervacion al cliente <br>
-                        favor de ponerse en contacto con el cliente si cree que se trada de un error</p>
+                    <span class="title">Reservación actualizada</span>
+                    <p class="message">Se ha enviado el estatus de la reservación al cliente.<br>
+                    Favor de ponerse en contacto con el cliente si cree que se trata de un error.</p>
                 </div>
                 <div class="actions">
                     <a href="https://gmail.com">
